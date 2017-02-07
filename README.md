@@ -1,5 +1,5 @@
 android_device_gionee6735_65c_l
-Device repository for lineage 14.1-20170206 UNOFFICIAL gionee6735_65c_l
+Device repository for cm 14.1-20170206 UNOFFICIAL gionee6735_65c_l
 
  Thanks to:
 * SRT TEAM
@@ -25,14 +25,13 @@ The includes.edit folder has hardware specific includes that fail against nougat
 
 Build instructions 
 
-You will need to delete sepolicy and and the cmhw.bak folder until they are fixed.
+You will need to delete sepolicy, include.edit, and cmhw.bak folders until they are fixed.
 
 Place folder in device/gionee/gionee6735_65c_l
-Run ./extract-files.sh and ./setup-makefiles.sh
+Run ./extract-files.sh and ./setup-makefiles.sh and ./setup-directories.sh with phone plugged in.
 Place the roomservice.xml file in your .repo/local_manifests/
 lunch && breakfast gionee6735_65c_l && brunch gionee6735_65c_l to build.
 
-You will need to make folders when it first starts to build then it should continue without error.
 
 After building it will not boot on your phone if you flash it :P.
 
