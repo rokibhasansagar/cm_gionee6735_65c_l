@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="cm-gionee6735_65c_l" path="device/gionee/gionee6735_65c_l" remote="github" />
+<!--  <project name="cm-gionee6735_65c_l-kernel" path="kernel/gionee/gionee6735_65c_l" remote="github" />
+-->
+</manifest>
