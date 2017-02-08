@@ -29,7 +29,6 @@ endif
 
 # init.rc's
 PRODUCT_COPY_FILES += \
-	device/gionee/gionee6735_65c_l/rootdir/init:root/init \
 	device/gionee/gionee6735_65c_l/rootdir/system:root/system \
 	device/gionee/gionee6735_65c_l/rootdir/sys:root/sys \
 	device/gionee/gionee6735_65c_l/rootdir/proc:root/proc \
@@ -86,8 +85,7 @@ PRODUCT_COPY_FILES += \
 	device/gionee/gionee6735_65c_l/recovery/root/res/images/dummyfile:root/res/images/dummyfile \
 	device/gionee/gionee6735_65c_l/recovery/root/res/images/font.png:root/res/images/font.png \
 	device/gionee/gionee6735_65c_l/recovery/root/dev:root/dev \
-	device/gionee/gionee6735_65c_l/recovery/root/data:root/data \
-	device/gionee/gionee6735_65c_l/recovery/root/init:root/init 
+	device/gionee/gionee6735_65c_l/recovery/root/data:root/data 
 
 # TWRP
 PRODUCT_COPY_FILES += device/gionee/gionee6735_65c_l/recovery/root/etc/twrp.fstab:recovery/root/etc/twrp.fstab

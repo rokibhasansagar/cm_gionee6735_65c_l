@@ -1,6 +1,8 @@
 # include proprietary libraries and binaries
 -include vendor/gionee/gionee6735_65c_l/BoardConfigVendor.mk
 
+TARGET_BUILD_VARIANT := 
+
 # use these headers 
 TARGET_SPECIFIC_HEADER_PATH := device/gionee/gionee6735_65c_l/include
  

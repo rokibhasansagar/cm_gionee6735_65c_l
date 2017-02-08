@@ -32,8 +32,15 @@ Run ./extract-files.sh and ./setup-makefiles.sh and ./setup-directories.sh with 
 Place the roomservice.xml file in your .repo/local_manifests/
 lunch && breakfast gionee6735_65c_l && brunch gionee6735_65c_l to build.
 
-
-After building it will not boot on your phone if you flash it :P.
-
 If you want TWRP then copy the TWRP source to buildable/recovery-trwp and copy a bionic source of busybox to externals/busybox and edit BoardConfig.mk to uncomment 
-#RECOVERY_VARIANT := twrp
+RECOVERY_VARIANT := twrp
+
+After building it will not boot on your phone because of gionee/blu's locked bootloader which leaves you two options.
+
+Option number one is beg blu or gionee for the kernel sources and sign your own /oemkeystore partition key to put on your device because 
+https://source.android.com/security/verifiedboot/dm-verity.html . The difficult part being patent trolls and idiots in customer service.
+
+Option number two is continue the work of https://forum.xda-developers.com/android/software-hacking/verified-boot-disk-encryption-testings-t3248161 . The difficult 
+part being re-assembling the arm code after finding the boolean value for bootloader:locked.
+
+I am pursueing one for now....
